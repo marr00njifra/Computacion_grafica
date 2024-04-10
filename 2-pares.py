@@ -7,9 +7,9 @@ def filtrar_pares(lista):
 
 def main():
     try:
-        numeros = input("Ingrese una lista de números separados por comas: ")
-        numeros = [int(num) for num in numeros.split(",")]
-        print(f"Números pares: {filtrar_pares(numeros)}")
+        x = input("Ingrese una lista de números separados por comas: ")
+        x = [int(num) for num in x.split(",")]
+        print(f"Números pares: {filtrar_pares(x)}")
     except ValueError:
         print("Error: Ingrese números válidos separados por comas.")
 
