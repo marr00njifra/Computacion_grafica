@@ -1,35 +1,35 @@
-def suma(a, b):
-    return a + b
+def sum(a, b):
+    return a+b
 
-def resta(a, b):
-    return a - b
+def res(a, b):
+    return a-b
 
-def multiplicacion(a, b):
-    return a * b
+def mul(a, b):
+    return a*b
 
-def division(a, b):
-    if b != 0:
-        return a / b
+def div(a, b):
+    if b!=0:
+        return a/b
     else:
-        return "Error: división por cero"
+        return "Error."
 
-def calculadora():
+def calculator():
     while True:
         try:
             opcion = input("¿Qué operación desea realizar? (suma/resta/multiplicacion/division): ")
             if opcion.lower() in ['suma', 'resta', 'multiplicacion', 'division']:
-                num1 = float(input("Ingrese el primer número: "))
-                num2 = float(input("Ingrese el segundo número: "))
+                a = float(input("Ingrese un primer número: "))
+                b = float(input("Ingrese un segundo número: "))
                 if opcion.lower() == 'suma':
-                    print(f"Resultado: {suma(num1, num2)}")
+                    print(f"Resultado: {sum(a, b)}")
                 elif opcion.lower() == 'resta':
-                    print(f"Resultado: {resta(num1, num2)}")
+                    print(f"Resultado: {res(a, b)}")
                 elif opcion.lower() == 'multiplicacion':
-                    print(f"Resultado: {multiplicacion(num1, num2)}")
+                    print(f"Resultado: {mul(a, b)}")
                 elif opcion.lower() == 'division':
-                    print(f"Resultado: {division(num1, num2)}")
+                    print(f"Resultado: {div(a, b)}")
             else:
-                print("Operación inválida. Intente nuevamente.")
+                print("Operación inválida.")
         except ValueError:
             print("Error: Ingrese un número válido.")
         except Exception as e:
@@ -39,4 +39,4 @@ def calculadora():
         if continuar.lower() != 'si':
             break
 
-calculadora()
+calculator()
