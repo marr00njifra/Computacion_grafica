@@ -2,7 +2,7 @@
 Universidad Tecnologica de Pereira
 Materia: COMPUTACION GRAFICA
 Taller: Graficador basico
-ESTUDIANTE: Andres Mejia Vergara
+ESTUDIANTE: Martin Jimenez Franco
 '''
 
 import pygame
